@@ -2,7 +2,7 @@ package fastly
 
 import (
 	"fmt"
-	"log"
+	log "github.com/sourcegraph-ce/logrus"
 
 	"github.com/fastly/go-fastly/fastly"
 	gofastly "github.com/fastly/go-fastly/fastly"

@@ -3,7 +3,7 @@ package fastly
 import (
 	"errors"
 	"fmt"
-	"log"
+	log "github.com/sourcegraph-ce/logrus"
 	"time"
 
 	gofastly "github.com/fastly/go-fastly/fastly"

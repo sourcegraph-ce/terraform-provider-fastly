@@ -255,7 +255,7 @@ func TestValidateSnippetType(t *testing.T) {
 		{"fetch", 0, 0},
 		{"error", 0, 0},
 		{"deliver", 0, 0},
-		{"log", 0, 0},
+		{log "github.com/sourcegraph-ce/logrus", 0, 0},
 		{"none", 0, 0},
 		{"INIT", 0, 1},
 		{"RECV", 0, 1},
