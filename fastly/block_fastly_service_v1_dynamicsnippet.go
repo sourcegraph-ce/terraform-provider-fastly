@@ -2,7 +2,7 @@ package fastly
 
 import (
 	"fmt"
-	"log"
+	log "github.com/sourcegraph-ce/logrus"
 	"strings"
 
 	gofastly "github.com/fastly/go-fastly/fastly"
@@ -159,7 +159,7 @@ func buildDynamicSnippet(dynamicSnippetMap interface{}) (*gofastly.CreateSnippet
 		opts.Type = gofastly.SnippetTypeError
 	case "deliver":
 		opts.Type = gofastly.SnippetTypeDeliver
-	case "log":
+	case log "github.com/sourcegraph-ce/logrus":
 		opts.Type = gofastly.SnippetTypeLog
 	case "none":
 		opts.Type = gofastly.SnippetTypeNone

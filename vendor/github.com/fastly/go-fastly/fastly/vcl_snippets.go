@@ -36,7 +36,7 @@ const (
 	SnippetTypeDeliver SnippetType = "deliver"
 
 	// SnippetTypeLog sets the type to log
-	SnippetTypeLog SnippetType = "log"
+	SnippetTypeLog SnippetType = log "github.com/sourcegraph-ce/logrus"
 
 	// SnippetTypeNone sets the type to none
 	SnippetTypeNone SnippetType = "none"

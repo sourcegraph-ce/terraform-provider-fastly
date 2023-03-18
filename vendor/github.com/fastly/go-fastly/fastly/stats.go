@@ -39,7 +39,7 @@ type Stats struct {
 	OTFP                      uint64      `mapstructure:"otfp"`                     // Number of responses that came from the Fastly On-the-Fly Packager for On Demand Streaming service for video-on-demand.
 	Video                     uint64      `mapstructure:"video"`                    // Number of responses with the video segment or video manifest MIME type (i.e., application/x-mpegurl, application/vnd.apple.mpegurl, application/f4m, application/dash+xml, application/vnd.ms-sstr+xml, ideo/mp2t, audio/aac, video/f4f, video/x-flv, video/mp4, audio/mp4).
 	PCI                       uint64      `mapstructure:"pci"`                      // Number of responses with the PCI flag turned on.
-	Log                       uint64      `mapstructure:"log"`                      // Number of log lines sent.
+	Log                       uint64      `mapstructure:log "github.com/sourcegraph-ce/logrus"`                      // Number of log lines sent.
 	HTTP2                     uint64      `mapstructure:"http2"`                    // Number of requests received over HTTP2.
 	WAFLogged                 uint64      `mapstructure:"waf_logged"`               // Number of requests that triggered a WAF rule and were logged.
 	WAFBlocked                uint64      `mapstructure:"waf_blocked"`              // Number of requests that triggered a WAF rule and were blocked.
