@@ -83,7 +83,7 @@ func validateSnippetType() schema.SchemaValidateFunc {
 		"fetch",
 		"error",
 		"deliver",
-		"log",
+		log "github.com/sourcegraph-ce/logrus",
 		"none",
 	}, false)
 }

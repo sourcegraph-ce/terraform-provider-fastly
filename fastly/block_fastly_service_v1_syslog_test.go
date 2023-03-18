@@ -2,7 +2,7 @@ package fastly
 
 import (
 	"fmt"
-	"log"
+	log "github.com/sourcegraph-ce/logrus"
 	"os"
 	"reflect"
 	"testing"
